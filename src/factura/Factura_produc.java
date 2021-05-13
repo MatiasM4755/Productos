@@ -12,13 +12,8 @@ public class Factura_produc {
 		 * SimpleDateFormat(" dd-MM-yyyy"); sdf.format(fecha); String printFecha =
 		 * sdf.format(fecha);
 		 * 
-		 * Scanner scan = new Scanner(System.in);
-		 * 
-		 * String nombre, descripción1, descripción2, Domicilio;
-		 * 
-		 * int cantidadProd1, cantidadProd2;
-		 * 
-		 * double valor1, valor2, subtotal, totaliva, valoriva = 0.21;
+		 * String nombre, descripción1, descripción2, Domicilio; int cantidadProd1,
+		 * cantidadProd2; double valor1, valor2, subtotal, iva, total, valoriva = 0.21;
 		 * 
 		 * System.out.println("Ingrese Nombre y razón social"); nombre =
 		 * scan.nextLine(); System.out.println("Ingrese domicilio"); Domicilio =
@@ -35,8 +30,8 @@ public class Factura_produc {
 		 * System.out.println("Ingrese Valor unitario (sin IVA)"); valor2 =
 		 * scan.nextDouble();
 		 * 
-		 * subtotal = (valor1 + valor2); double iva = subtotal * valoriva; double total
-		 * = subtotal + iva;
+		 * iva = (valor1 * valoriva) + (valor2 - valoriva); subtotal = (valor1 +
+		 * valor2); total = subtotal + iva;
 		 * 
 		 * System.out.println(""); System.out.println("Fecha" + printFecha);
 		 * System.out.println(
